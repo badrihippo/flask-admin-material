@@ -1,0 +1,42 @@
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* These  menu styles are modified from the original, which can be found */
+/* at http://fezvrasta.github.io/bootstrap-material-design/index.css */
+.menu {
+    overflow: auto;
+    padding: 0;
+}
+
+.menu, .menu * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 7px 0;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px 0 20px 50px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.menu ul li.active {
+    background-color: #dedede;
+    position: relative;
+}
+
+.menu ul li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+

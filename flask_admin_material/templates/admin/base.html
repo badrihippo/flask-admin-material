@@ -16,11 +16,7 @@
         <link href="{{ url_for('admin_theme.static', filename='bootstrap-material-design/css/bootstrap-material-design.min.css') }}" rel="stylesheet">
         <link href="{{ url_for('admin_theme.static', filename='bootstrap-material-design/css/ripple.min.css') }}" rel="stylesheet">
         <link href="{{ admin_static.url(filename='admin/css/bootstrap3/admin.css', v='1.1.1') }}" rel="stylesheet">
-        <style>
-        body {
-            padding-top: 4px;
-        }
-        </style>
+        <link href="{{ url_for('admin_theme.static', filename='css/admin-material.css') }}" rel="stylesheet">
     {% endblock %}
     {% block head %}
     {% endblock %}
