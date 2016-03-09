@@ -14,7 +14,7 @@
     {% block head_css %}
         <link href="{{ admin_static.url(filename='bootstrap/bootstrap3/css/bootstrap.min.css', v='3.3.5') }}" rel="stylesheet">
         <link href="{{ url_for('admin_theme.static', filename='bootstrap-material-design/css/bootstrap-material-design.min.css') }}" rel="stylesheet">
-        <link href="{{ url_for('admin_theme.static', filename='bootstrap-material-design/css/ripple.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('admin_theme.static', filename='bootstrap-material-design/css/ripples.min.css') }}" rel="stylesheet">
         <link href="{{ admin_static.url(filename='admin/css/bootstrap3/admin.css', v='1.1.1') }}" rel="stylesheet">
         <link href="{{ url_for('admin_theme.static', filename='css/admin-material.css') }}" rel="stylesheet">
     {% endblock %}
@@ -73,8 +73,8 @@
     {% block tail_js %}
     <script src="{{ admin_static.url(filename='vendor/jquery.min.js', v='2.1.4') }}" type="text/javascript"></script>
     <script src="{{ admin_static.url(filename='bootstrap/bootstrap3/js/bootstrap.min.js', v='3.3.5') }}" type="text/javascript"></script>
-    <script src="{{ url_for('admin_theme.static', filename='bootstrap-material-design/js/bootstrap-material-design.min.js') }}" type="text/javascript"></script>
-    <script src="{{ url_for('admin_theme.static', filename='bootstrap-material-design/js/ripple.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('admin_theme.static', filename='bootstrap-material-design/js/material.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('admin_theme.static', filename='bootstrap-material-design/js/ripples.min.js') }}" type="text/javascript"></script>
     <script src="{{ admin_static.url(filename='vendor/moment.min.js', v='2.9.0') }}" type="text/javascript"></script>
     <script src="{{ admin_static.url(filename='vendor/select2/select2.min.js', v='3.5.2') }}" type="text/javascript"></script>
     {% endblock %}
