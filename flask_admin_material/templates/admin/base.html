@@ -25,8 +25,8 @@
   </head>
   <body>
     {% block page_body %}
-    <div class="container">
-      <nav class="navbar navbar-default" role="navigation">
+    <div class="container container-main">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#admin-navbar-collapse">
@@ -57,6 +57,7 @@
         </div>
       </nav>
 
+      <div class="container main-page">
       {% block messages %}
       {{ layout.messages() }}
       {% endblock %}
@@ -65,6 +66,7 @@
       {% set render_ctx = h.resolve_ctx() %}
 
       {% block body %}{% endblock %}
+      </div>
     </div>
     {% endblock %}
 
